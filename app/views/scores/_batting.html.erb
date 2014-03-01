@@ -1,0 +1,95 @@
+<div class="table-responsive">
+                      <table class="table">
+                      <thead>
+                      <tr>
+                      <th>Bolwer</th>
+                      <th>Overs</th>
+                      <th>Wides</th>
+                      <th>Noballs</th>
+                 
+                      <th>Fours</th>
+                      <th>Sixes</th>
+                      <th>Wickets</th>
+                      <th>Total Runs</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                     <% @bowlings.first(11).each do |bowl| %>
+                     <tr>
+                      <td>
+                          <%= bowl.name %>
+                        </td>
+                        <td>
+                          <%= bowl.overs %>
+                        </td>
+                        <td>
+                          <%= bowl.wides %>
+                        </td>
+                        <td>
+                          <%= bowl.noball %>
+                        </td>
+                        <td>
+                          <%= bowl.fours %>
+                        </td>
+                        <td>
+                          <%= bowl.sixes %>
+                        </td>
+                        <td>
+                          <%= bowl.wkts %>
+                        </td>
+                        <td>
+                          <%= bowl.wides + bowl.noball + bowl.fours*4 + bowl.sixes*6 %>
+                        </td>
+                      </tr>
+                      <% end %>
+                      </tbody>
+                      </table>
+                      </div>  
+                        <hr>
+                      <div class="table-responsive">
+                      <table class="table">
+                      <thead>
+                      <tr>
+                      <th>Bolwer</th>
+                      <th>Overs</th>
+                      <th>Wides</th>
+                      <th>Noballs</th>
+                 
+                      <th>Fours</th>
+                      <th>Sixes</th>
+                      <th>Wickets</th>
+                      <th>Total Runs</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                     <% @bowlings.first(11).each do |bowl| %>
+                     <tr>
+                      <td>
+                          <%= bowl.name %>
+                        </td>
+                        <td>
+                          <%= bowl.overs %>
+                        </td>
+                        <td>
+                          <%= bowl.wides %>
+                        </td>
+                        <td>
+                          <%= bowl.noball %>
+                        </td>
+                        <td>
+                          <%= bowl.fours %>
+                        </td>
+                        <td>
+                          <%= bowl.sixes %>
+                        </td>
+                        <td>
+                          <%= bowl.wkts %>
+                        </td>
+                        <td>
+                          <%= bowl.wides + bowl.noball + bowl.fours*4 + bowl.sixes*6 %>
+                        </td>
+                      </tr>
+                      <% end %>
+                      </tbody>
+                      </table>
+                      </div>  

@@ -1,0 +1,66 @@
+ <div class="row row-offcanvas row-offcanvas-right">
+    <div class="row ">
+      <div class="col-lg-8">
+        <div class="jumbotron" style="background:url('/assets/ball.jpg') center no-repeat;">
+         
+            <% @scores.each do |score| %>
+                <h3 id ="text-glow" style="color:#fff; width:50%"><strong><%= score.team1 %></strong> Vs <strong><%= score.team2 %></strong></h3>
+            <% end %>
+        </div>
+    </div/>
+      <div class="col-lg-4">
+         <img  src="/assets/banner2.jpg" width="100%" >
+      </div>
+      
+  </div>
+    <div class="col-xs-12 col-sm-9">
+           <div class="col-lg-12">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                Score Card : Innings 1, March 23, 2014
+              </h3>
+            </div>
+            <div class="panel-body">
+             <!-- Nav tabs -->
+              <ul class="nav nav-tabs">
+                <li class="active">
+                  <a href="#innings1" data-toggle="tab">Ininngs </a>
+                </li>
+                <li>
+                  <a href="#innings2" data-toggle="tab">Ininngs 2</a>
+                </li>
+              </ul>
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div class="tab-pane active" id="innings1">
+                    <%= render "batting" %> 
+                </div>
+                <div class="tab-pane" id="innings2">
+                  <%= render "bowling" %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-4 sidebar-offcanvas" id="sidebar" role="navigation">
+          <div class="list-group">
+            <a href="#" class="list-group-item active">Matches Comming up</a>
+            <a href="#" class="list-group-item">ChakDe Vs Histroy Makers</a>
+            <a href="#" class="list-group-item">ChakDe Vs Histroy Makers</a>
+            <a href="#" class="list-group-item">ChakDe Vs Histroy Makers</a>
+            <a href="#" class="list-group-item">ChakDe Vs Histroy Makers</a>
+          </div>
+          <div class="list-group">
+            <a href="#" class="list-group-item active">Venue</a>
+            <a href="#" class="list-group-item">Archive Ground</a>
+            <a href="#" class="list-group-item">Archive Ground</a>
+            <a href="#" class="list-group-item">Archive Ground</a>
+            <a href="#" class="list-group-item">Archive Ground</a>
+          </div>
+        </div><!--/span-->
+
+    </div>
+   
+        
